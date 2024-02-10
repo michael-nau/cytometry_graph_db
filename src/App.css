@@ -14,12 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #71757c;
+  padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: top;
+  justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +36,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-container {
+  display: flex;
+  justify-content: top;
+  align-items: start;
+  margin-top: 20px;
+  /* Adjust top margin as needed */
+  padding: 20px;
+  border: 2px solid #ccc;
+  /* Outline effect */
+  border-radius: 5px;
+  /* Optional: adds rounded corners to the outline */
+  width: fit-content;
+}
+
+/* Additional styles to ensure the form inputs and button are nicely aligned */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.form-container button {
+  margin-top: 5px;
 }
