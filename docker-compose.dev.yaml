@@ -2,13 +2,13 @@ networks:
   neo4j-internal:
 
 services:
-  # webapp:
-  #   image: webapp
-  #   build: .
-  #   ports:
-  #     - "3000:3000"
-  #   links:
-  #     - db
+  webapp:
+    image: webapp
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - db
   db:
     image: neo4j
     ports:
